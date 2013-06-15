@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.mcamera4fun.ui.view.RotateImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/thumbnail"
+    style="@style/ReviewThumbnail"
+    android:layout_gravity="bottom|center_vertical"
+    android:background="@drawable/border_last_picture"
+    android:scaleType="centerCrop"
+    android:clickable="true"
+    android:contentDescription="@string/accessibility_review_thumbnail"
+    android:focusable="false"
+    android:onClick="onThumbnailClicked" />

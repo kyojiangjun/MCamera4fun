@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/preview_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <com.pinguo.mcamera4fun.ui.FocusIndicatorRotateLayout
+            android:id="@+id/focus_indicator"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/camera_app_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/camera_bottom_bar" />
+    </RelativeLayout>
+    
+</RelativeLayout>

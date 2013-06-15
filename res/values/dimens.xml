@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="control_panel_min_length">75dp</dimen>
+    <dimen name="camera_boom_width">62dp</dimen>
+    <dimen name="camera_boom_margin">17.36dp</dimen>
+    
+    <dimen name="thumbnail_size">39.0dp</dimen>
+    
+    <dimen name="shutter_btn_line_width">7dp</dimen>
+    <dimen name="shutter_btn_line_height">156dp</dimen>
+    <dimen name="shutter_btn_size">85dp</dimen>
+    
+</resources>

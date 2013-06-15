@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c)2010-2012  Pinguo Company
+     品果科技                            版权所有 2010-2012
+  
+     PROPRIETARY RIGHTS of Pinguo Company are involved in the
+  	 subject matter of this material.  All manufacturing, reproduction, use,
+     and sales rights pertaining to this subject matter are governed by the
+     license agreement.  The recipient of this software implicitly accepts   
+     the terms of the license.
+     本软件文档资料是品果公司的资产,任何人士阅读和使用本资料必须获得
+     相应的书面授权,承担保密责任和接受相应的法律约束.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dip" >
+
+        <ImageView
+            android:id="@+id/iv_scroll_bar"
+            android:layout_width="@dimen/shutter_btn_line_width"
+            android:layout_height="@dimen/shutter_btn_line_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_seekbar"
+            android:scaleType="centerInside" />
+
+        <com.pinguo.mcamera4fun.ui.view.RotateImageView
+            android:id="@+id/iv_topic_icon"
+            android:layout_width="14.5dp"
+            android:layout_height="14.5dp"
+            android:layout_alignTop="@+id/iv_scroll_bar"
+            android:layout_toRightOf="@+id/iv_scroll_bar"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_topic" />
+
+        <com.pinguo.mcamera4fun.ui.view.RotateImageView
+            android:id="@+id/iv_special_icon"
+            android:layout_width="14.5dp"
+            android:layout_height="14.5dp"
+            android:layout_alignBottom="@+id/iv_scroll_bar"
+            android:layout_toRightOf="@+id/iv_scroll_bar"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_effect" />
+
+        <com.pinguo.mcamera4fun.ui.view.RotateImageView
+            android:id="@+id/iv_new_icon"
+            android:layout_width="13.0dp"
+            android:layout_height="13.0dp"
+            android:layout_above="@id/iv_topic_icon"
+            android:layout_alignLeft="@id/iv_scroll_bar"
+            android:layout_marginBottom="-2.5dp"
+            android:layout_marginLeft="2.5dp"
+            android:visibility="invisible"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_tips_new" />
+
+        <RelativeLayout
+            android:id="@+id/camera_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <com.pinguo.mcamera4fun.ui.view.RotateImageView
+                android:id="@+id/iv_scrollbar_background"
+                android:layout_width="@dimen/shutter_btn_size"
+                android:layout_height="@dimen/shutter_btn_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bg_shutter_button" />
+
+            <com.pinguo.mcamera4fun.ui.view.RotateImageView
+                android:id="@+id/iv_scroll_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_special_small" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/top_click_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/iv_topic_icon">
+        </RelativeLayout>
+            
+        <RelativeLayout
+            android:id="@+id/bottom_click_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/iv_special_icon">
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

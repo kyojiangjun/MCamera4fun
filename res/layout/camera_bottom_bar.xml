@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/control_panel_min_length" >
+    
+    <FrameLayout
+        android:id="@+id/bottom_frame"
+        android:layout_toLeftOf="@+id/lay_camera_bottom_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+    
+     <RelativeLayout
+         android:id="@+id/lay_camera_bottom_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/bg_camera_boom"
+         android:clickable="true"
+         android:paddingBottom="@dimen/camera_boom_margin"
+         android:paddingTop="@dimen/camera_boom_margin" >
+        
+         <include layout="@layout/review_thumbnail"/>
+         
+         <com.pinguo.mcamera4fun.ui.view.RotateImageView
+            android:id="@+id/mode_iv_new_icon"
+            android:layout_width="13.0dp"
+            android:layout_height="13.0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="2.5dp"
+            android:visibility="invisible"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_tips_new" />
+         
+     </RelativeLayout>
+     
+     <RelativeLayout
+        android:id="@+id/scroll_bar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true" >
+
+        <com.pinguo.mcamera4fun.ui.view.ShutterButtonPanel
+            android:id="@+id/seekBarLayout"
+            android:layout_width="90dip"
+            android:layout_height="220dip" />
+    </RelativeLayout>
+
+</RelativeLayout>
